@@ -378,6 +378,7 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin-left: 20px;
+  text-align: left;
 }
 
 .header-area .main-nav .logo img {
@@ -1451,6 +1452,7 @@ footer .copyright {
   }
 }
 
+
 /* 
 ---------------------------------------------
 preloader
@@ -1544,4 +1546,20 @@ preloader
 }
 .list-style li{
   list-style: circle;
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1200px){ 
+  .header-area.header-sticky .nav{
+    margin-top: 17px !important;
+    margin-right: 0px;
+    width: 100%;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .header-area .main-nav .logo{
+    margin-top: 8px !important;
+    max-width: 175px;
+    font-size: 1.45rem;
+  }
 }
